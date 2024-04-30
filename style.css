@@ -76,12 +76,19 @@ h3 {
     font-size: 25px;
 }
 
-.home-content {
+.home-content-links {
    display: flex;
    width: 100%;
    justify-content:center;
    margin: 2%;
 }
+
+.home-content-destaques{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    margin: 2%;
+ }
 
 .destaques {
     background-color: aliceblue;
@@ -206,4 +213,39 @@ footer {
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        color:aliceblue;
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    .photo {
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .principal-content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: aliceblue;
+    }
+
+    .home-content-destaques {
+        display: flex;
+        width: 100%;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+     }
+
+     .projects-cards {
+        width: 90%;
+     }
+   
 }
