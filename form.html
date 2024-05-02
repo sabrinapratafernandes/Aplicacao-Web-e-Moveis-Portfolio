@@ -6,8 +6,7 @@
     <title>Portfolio - Sabrina Fernandes</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 </head>
-<body> 
-    
+<body>
     <header>
         <div class="nav-b">
             <div class="menu-toggle" id="menuToggle">
@@ -26,9 +25,6 @@
         </div>
     </header>
 
-   
-
-
     <header class="nav">
         <a class="nav-link" href="/index.html">Inicio</a>
         <a class="nav-link" href="./abbout.html">Sobre Mim</a>
@@ -37,49 +33,38 @@
         <a class="nav-link" href="./form.html">Contato</a>
     </header>
 
-    <div class="principal-content">
-        <img class="photo" src="./imgs/foto.jpg"/>
-        <div class="principal-info">
-            <h1>Sabrina B. P. Fernandes</h1>
-            <h3>Front-end Developer</h3>
-            <div class="skils-icons">
-                <img class="icon" src="./imgs/html-icon.png"/>
-                <img class="icon" src="./imgs/css-icon.png"/>
-                <img class="icon" src="./imgs/js-icon.png"/>
-                <img class="icon" src="./imgs/react-icon.png"/>
-                <img class="icon" src="./imgs/git-icon.png"/>
-                <img class="icon" src="./imgs/scss-icon.png"/>
-                <img class="icon" src="./imgs/figma-icon.png"/>
-            </div>
+    <div class="container-form">
+        <h1 class="title-form">Formulário de Contato</h1>
+
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Nome:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="successMessage" style="display: none;">
+            Obrigado! Sua mensagem foi enviada com sucesso.
         </div>
     </div>
 
-    <div class="home-content-links">
-        <a class="destaques" href="./docs/pt-curriculo-sa-dev.pdf" download="pt-curriculo-sa-dev.pdf">Baixar CV</a>
-        <a class="destaques" href="https://www.linkedin.com/in/sabrinabpf/" target="_blank">Linkedin</a>
-        <a class="destaques" href="https://github.com/sabrinapratafernandes" target="_blank">Github</a>
-    </div>
+    <p>
+        Esse formulario de contato ainda não envia e-mails*
+        Foi desenvolvido apenas para o front
+    </p>
 
-    <div class="home-destaques">
-        <h3>Destaques:</h3>
-        <div class="home-content-destaques">
-            <a class="destaques" href="https://sabrinapratafernandes.github.io/barbiepage/" target="_blank">Barbie Page</a>
-            <a class="destaques" href="https://sabrinapratafernandes.github.io/numero-secreto/" target="_blank">Número Secreto</a>
-            <a class="destaques" href="https://sabrinapratafernandes.github.io/Challenge-results-summary/" target="_blank">Challeng Results Summary</a>
-        </div>
-    </div>
-   
     <a class="scroll" id="btnScrollToTop">
         <img class="arrow-up-img" src="./imgs/arrow-up.png" alt="">
     </a>
-
+    
     <footer>
         <p>Desenvolvido por: Sabrina Fernandes</p>
         <p>Trabalho para faculdade</p>
     </footer>
-
-  
-
+    
     <script src="/script.js"></script>
 </body>
 </html>
