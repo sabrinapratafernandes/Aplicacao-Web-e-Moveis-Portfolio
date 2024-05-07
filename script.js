@@ -28,6 +28,7 @@ function validateForm() {
     return false;
 }
 
+// Função responsável por enviar os dados do formulário para um servidor
 function submitForm() {
     if (validateForm()) {
         fetch('/send-email', {
@@ -53,19 +54,19 @@ function submitForm() {
     }
 }
 
-
-
+// Ação do menu no mobile, abrir/fechar menu
 document.addEventListener("DOMContentLoaded", function() {
     var menuToggle = document.getElementById("menuToggle");
     var menu = document.querySelector(".menu");
 
+    // Escuta quando o menu é clicado e aciona o mesmo
     menuToggle.addEventListener("click", function() {
         console.log("Menu toggle clicked");
         menu.classList.toggle("active");
         console.log("Menu active:", menu.classList.contains("active"));
     });
 
-    // Fechar o menu ao clicar em qualquer lugar fora dele
+    // Fecha o menu ao clicar em qualquer lugar fora dele
     document.addEventListener("click", function(event) {
         if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
             menu.classList.remove("active");

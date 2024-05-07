@@ -2,6 +2,14 @@
 
 Matéria: Aplicações Web e Móveis
 
+### Requisitos:
+
+Usar: HTML, CSS, JavaScript
+
+- Minimo 4 links de menu;
+- Conter um formulário;
+- Comentar o código objetivamente.
+
 ### Tecnologias Utilizadas: 
 
 - HTML
